@@ -1,0 +1,19 @@
+.center-y {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.center-x {
+    text-align: center;
+}
+
+.stack-sans-notch {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
