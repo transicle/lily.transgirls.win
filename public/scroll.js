@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const animate = () => {
         const diff = targetScroll - currentScroll;
-        
+
         if (Math.abs(diff) < 0.1) {
             currentScroll = targetScroll;
             portfolioCards.scrollLeft = currentScroll;
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const maxScroll = portfolioCards.scrollWidth - portfolioCards.clientWidth;
         if (maxScroll <= 0) return;
 
-        // Use whichever axis has more movement (supports mice and trackpads)
         const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY)
             ? event.deltaX
             : event.deltaY;
