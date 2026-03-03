@@ -23,27 +23,29 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     portfolioCards.addEventListener('wheel', (event) => {
-        const isVerticalScroll = Math.abs(event.deltaY) > Math.abs(event.deltaX);
-        
-        if (!isVerticalScroll) return;
-
         const maxScroll = portfolioCards.scrollWidth - portfolioCards.clientWidth;
-        
         if (maxScroll <= 0) return;
 
-        const scrollingLeft = event.deltaY < 0;
-        const scrollingRight = event.deltaY > 0;
-        
+        // Use whichever axis has more movement (supports mice and trackpads)
+        const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY)
+            ? event.deltaX
+            : event.deltaY;
+
+        if (delta === 0) return;
+
+        const scrollingBack = delta < 0;
+        const scrollingForward = delta > 0;
+
         const isAtStart = currentScroll <= 1;
         const isAtEnd = currentScroll >= maxScroll - 1;
 
-        if ((scrollingLeft && isAtStart) || (scrollingRight && isAtEnd)) {
+        if ((scrollingBack && isAtStart) || (scrollingForward && isAtEnd)) {
             return;
         }
 
         event.preventDefault();
-        
-        targetScroll += event.deltaY * 0.8;
+
+        targetScroll += delta * 0.8;
         targetScroll = Math.max(0, Math.min(maxScroll, targetScroll));
 
         if (!animating) {
