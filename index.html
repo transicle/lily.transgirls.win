@@ -4,9 +4,9 @@
 <head>
     <title>lily's realm</title>
 
-    <link rel="stylesheet" href="../public/styles.css" />
-    <link rel="stylesheet" href="../public/elements.css" />
-    <link rel="stylesheet" href="../public/classes.css" />
+    <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="stylesheet" href="./public/elements.css" />
+    <link rel="stylesheet" href="./public/classes.css" />
 
     <!-- Imported fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,50 +18,88 @@
 </head>
 
 <body>
-    <!-- Top of page -->
-    <h1 style="padding-top: 50px;" class="center-x">
-        <a href="https://lily.transgirls.win/#" class="stack-sans-notch">
-            lily.transgirls.win
-        </a>
-    </h1>
-    <p style="font-style: italic; font-size: 14px;" class="center-x stack-sans-notch">
-        Autism • Polyglot Programmer • Arch Linux • Junior in High School
-    </p>
-    <!-- <p style="font-style: italic; font-size: 14px;" class="center-x stack-sans-notch">
-        <a href="https://lily.transgirls.win/projects">
-            View my portfolio :3
-        </a>
-    </p> -->
-
-    <!-- Center of page -->
-    <div class="center-x center-y">
-        <p class="stack-sans-notch">
-            <a href="https://github.com/transicle">
-                GitHub
-            </a> • <a href="https://discord.com/users/1002377371892072498">
-                Discord
-            </a> • <a href="https://www.youtube.com/@transicle">
-                YouTube
-            </a> • <a href="https://www.roblox.com/users/3805519155/profile">
-                Roblox
+    <div class="stack-sans-notch">
+        <!-- Top of page -->
+        <h1 style="padding-top: 50px;" class="center-x">
+            <a href="https://lily.transgirls.win/#">
+                lily.transgirls.win
             </a>
+        </h1>
+        <p style="font-style: italic; font-size: 14px;" class="center-x ">
+            Autism • <span style="color: #AEC6CF;">Transfem</span> • Junior in High School
         </p>
-        <p style="font-size: 14px" class="stack-sans-notch">
-            I'm lily and I enjoy designing and writing programming languages, creating compilers from
-            scratch,<br>operating system kernels, and learning new things <i><b>!!</b></i>
-        </p>
+
+        <!-- Center of page -->
+        <div class="center-x center-y">
+            <!-- Upper Center -->
+            <p>
+                <a href="https://github.com/transicle">
+                    GitHub
+                </a> • <a href="https://discord.com/users/1002377371892072498">
+                    Discord
+                </a> • <a href="https://www.youtube.com/@transicle">
+                    YouTube
+                </a> • <a href="https://www.roblox.com/users/3805519155/profile">
+                    Roblox
+                </a>
+            </p>
+            <p style="font-size: 14px">
+                I'm lily! I love computer science, more specifically, compiler design, front and<br>backend web
+                development, and stuff I find useful overall :3
+            </p>
+
+            <!-- Lower Center -->
+            <div style="margin-top: 50px;">
+                <h2 style="color: #bdd2e4;">Portfolio</h2>
+                <div class="portfolio-cards">
+                    <article class="portfolio-card">
+                        <h3>ADAN</h3>
+                        <p>A modern, memory safe programming language designed for any developer for any use case.</p>
+                        <a href="https://github.com/Cappucina/ADAN">View on GitHub</a>
+                        <a href="https://adan.sh">Open Website</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <h3>Revision Proxy</h3>
+                        <p>Self hosted ScramJet based proxy server for evading internet censorship using a proof of
+                            concept port changing system to constantly remain in an unblocked state.</p>
+                        <a href="https://github.com/transicle/Revision">View on GitHub</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <h3>Anti YouTube Shorts</h3>
+                        <p>Avoid distractions by completely removing the YouTube Shorts feature from YouTube.</p>
+                        <a href="https://github.com/transicle/anti-yt-shorts">View on GitHub</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <h3>Buffalo</h3>
+                        <p>A beginner friendly TUI framework available on various package managers for Node.js projects.
+                        </p>
+                        <a href="https://github.com/transicle/buffalo-tui">View on GitHub</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <h3>CSync</h3>
+                        <p>Extract your VS Code extensions, settings, as well as UI preferences and layout into a
+                            devcontainer.json configuration file.</p>
+                        <a href="https://github.com/transicle/csync">View on GitHub</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom of page -->
+        <footer>
+            <p>
+                <img src="assets/autism.gif" alt="silly aumtism" width="100" height="35">
+                <img src="assets/queercoded.png" alt="queer coded this, really?"
+                    width="100" height="35">
+                <img src="assets/nyancat.gif" alt="silly cat" width="100" height="35">
+                <img src="assets/princess.gif" alt="princess" width="100" height="35">
+                <img src="assets/madewithmyowntwopaws.jpg" alt="MY paws!!" width="100"
+                    height="35">
+            </p>
+        </footer>
     </div>
 
-    <!-- Bottom of page -->
-    <footer>
-        <p class="stack-sans-notch">
-            <img src="https://transgirls.win/assets/media/autism.gif" alt="silly aumtism" width="100" height="35">
-            <img src="https://transgirls.win/assets/media/queercoded.png" alt="queer coded this, really?" width="100" height="35">
-            <img src="https://transgirls.win/assets/media/nyancat.gif" alt="silly cat" width="100" height="35">
-            <img src="https://transgirls.win/assets/media/princess.gif" alt="princess" width="100" height="35">
-            <img src="https://transgirls.win/assets/media/madewithmyowntwopaws.jpg" alt="MY paws!!" width="100" height="35">
-        </p>
-    </footer>
+    <script src="./public/scroll.js" defer></script>
 </body>
 
 </html>

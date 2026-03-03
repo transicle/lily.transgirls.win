@@ -17,3 +17,107 @@
     font-weight: 500;
     font-style: normal;
 }
+
+.portfolio-cards {
+    width: min(900px, 90vw);
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 20px 12px 20px;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #AEC6CF transparent;
+    position: relative;
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 20px,
+            black calc(100% - 20px),
+            transparent);
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 20px,
+            black calc(100% - 20px),
+            transparent);
+    scrollbar-gutter: stable;
+}
+
+.portfolio-cards::-webkit-scrollbar {
+    height: 8px;
+    position: absolute;
+}
+
+.portfolio-cards::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.portfolio-cards::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 999px;
+    margin: 0 40px;
+}
+
+.portfolio-cards::-webkit-scrollbar-thumb {
+    background: #AEC6CF;
+    border-radius: 999px;
+}
+
+.portfolio-cards::-webkit-scrollbar-thumb {
+    background: #AEC6CF;
+    border-radius: 999px;
+}
+
+.portfolio-cards::-webkit-scrollbar-thumb:hover {
+    background: #bdd2e4;
+}
+
+.portfolio-card {
+    width: 260px;
+    flex: 0 0 260px;
+    scroll-snap-align: start;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: left;
+    background-color: rgb(30, 30, 30);
+}
+
+.portfolio-card * {
+    background-color: transparent;
+}
+
+.portfolio-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #bdd2e4;
+    line-height: 1.25;
+}
+
+.portfolio-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.portfolio-card a {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline;
+    margin-right: 8px;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.portfolio-card a::after {
+    content: ' ↗';
+    font-size: 12px;
+    margin-left: 4px;
+}
