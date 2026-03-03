@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         event.preventDefault();
         
-        // Adjusted scroll speed for better control
         targetScroll += event.deltaY * 0.8;
         targetScroll = Math.max(0, Math.min(maxScroll, targetScroll));
 
@@ -54,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: false });
 
-    // Sync when user manually scrolls
     portfolioCards.addEventListener('scroll', () => {
         if (!animating) {
             targetScroll = portfolioCards.scrollLeft;
